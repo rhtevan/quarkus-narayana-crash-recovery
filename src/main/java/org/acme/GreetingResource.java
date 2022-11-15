@@ -1,5 +1,8 @@
 package org.acme;
 
+import java.sql.Connection;
+import java.sql.Statement;
+
 import javax.inject.Inject;
 import javax.sql.DataSource;
 import javax.transaction.TransactionManager;
@@ -8,8 +11,6 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-import java.sql.Connection;
-import java.sql.Statement;
 
 @Path("/hello")
 public class GreetingResource {
